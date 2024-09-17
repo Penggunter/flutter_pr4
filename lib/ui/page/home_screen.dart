@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_pr4/ui/page/column_screen.dart';
 import 'package:flutter_pr4/ui/page/list_screen.dart';
+import 'package:flutter_pr4/ui/page/list_separated_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   HomeScreen({super.key, required this.title});
@@ -17,6 +18,7 @@ class _HomeScreenState extends State<HomeScreen> {
   final List<Widget> _screens = [
     ColumnScreen(),
     ListViewScreen(),
+    ListViewSeparatedScreen(),
   ];
 
   void _onItemTapped(int index) {
