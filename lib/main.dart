@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import './ui/page/home_screen.dart';
 
 void main() {
   runApp(MainApp());
@@ -17,15 +18,7 @@ class MainApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 230, 163, 48)),
         useMaterial3: true,
       ), 
-      home: Scaffold(
-        appBar: AppBar(
-          backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-          title: Text(_title),
-        ),
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
+      home: HomeScreen(title: 'Flutter pr4'),
     );
   }
 }
