@@ -7,11 +7,11 @@ class ColumnScreen extends StatefulWidget {
 }
 
 class _ColumnScreenState extends State<ColumnScreen> {
-  List<String> _items = ['Пользователь 1', 'Пользователь 2', 'Пользователь 3'];
+  List<String> _items = ['Сообщение 1', 'Сообщение 2', 'Сообщение 3'];
 
   void _addItem() {
     setState(() {
-      _items.add('Пользователь ${_items.length + 1}');
+      _items.add('Сообщение ${_items.length + 1}');
     });
   }
 
